@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="logo"><img src="images/logo.svg" alt="" /></div>
+        <div class="images"></div>
+        <div class="text">
+          Start for free & get <br />
+          attractive offers today
+        </div>
+      </div>
+      <form id="form">
+        <div class="social">
+          <div class="title">Get Started</div>
+          <div class="question">
+            Already have an account? <br />
+            <span>Log In</span>
+          </div>
+
+          <div class="btn">
+            <div class="btn-1">
+              <img src="images/google.svg" class="imgs btns" />
+              <p>Sign Up</p>
+            </div>
+            <div class="btn-2">
+              <img src="images/facebook.svg" class="btns" />
+              <p>Sign Up</p>
+            </div>
+          </div>
+          <div class="or">Or</div>
+        </div>
+
+        <!-- /**
+          * ! Username Input Here 
+        **/ -->
+        <div>
+          <label for="username">Username</label>
+          <img src="images/user.svg" class="imgs" />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Viki Designs"
+          />
+          <img src="images/danger.svg" class="imgs failure-icon" />
+          <img src="images/success.svg" class="imgs success-icon" />
+          <div class="error"></div>
+        </div>
+
+        <!-- /**
+          * ! Email Input Here 
+        **/ -->
+        <div>
+          <label for="email">Email</label>
+          <img src="images/mail.svg" class="imgs" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abcd@gmail.com"
+          />
+          <img src="images/danger.svg" class="imgs failure-icon" />
+          <img src="images/success.svg" class="imgs success-icon" />
+          <div class="error"></div>
+        </div>
+
+        <!-- /**
+          * ! Password Input Here 
+        **/ -->
+        <div>
+          <label for="password">Password</label>
+          <img src="images/lock.svg" class="imgs" />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password..."
+          />
+          <img src="images/danger.svg" class="imgs failure-icon" />
+          <img src="images/success.svg" class="imgs success-icon" />
+          <div class="error"></div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
